@@ -1,0 +1,44 @@
+fruitlist1= ['Apple','Berry','Cherry','Papaya']
+fruitlist2 = fruitlist1
+fruitlist3 = fruitlist1[:]
+fruitlist2[0] = 'Guava'
+fruitlist3[1] = 'Kiwi'
+sum = 0
+for ls in (fruitlist1, fruitlist2, fruitlist3):
+    if ls[0] == 'Guava':
+        sum += 1
+    if ls[1] == 'Kiwi':
+        sum += 20
+print(sum)
+
+
+def f(i, values = []): #default list
+  values.append(i)
+  print(values)
+  #return values
+f(1) #calling function
+f(2)
+f(3)
+
+def func(value, values):
+  var = 1
+  values[0] = 44
+t = 3
+v = [1,2,3]
+func(t,v)
+print(t,v[0])
+
+dict ={'c':97,'a':96,'b':98}
+for _ in sorted(dict):
+  print(dict[_])
+
+fruit = {}
+def addone(index):
+  if index in fruit:
+    fruit[index] += 1
+  else:
+    fruit[index] = 1
+addone('Apple')
+addone('Banana')
+addone('apple')
+print(len(fruit))
